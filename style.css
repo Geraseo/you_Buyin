@@ -1,0 +1,236 @@
+/* padariau delete buttonus visam */
+/* padariau kad butu galima pasirinkti kategorija */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#newPostdiv {
+  order: 1 !important;
+}
+
+#header {
+  height: 15vh !important;
+}
+#status {
+  color: white;
+}
+#navbarNavAltMarkup {
+  height: 99vh;
+  width: 99vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 !important;
+  z-index: 10;
+}
+
+@media screen and (max-width: 991px) {
+  #ads {
+    height: 80vh;
+    width: 100vw !important;
+    top: 20vh;
+    position: absolute;
+    border-radius: 0 !important;
+  }
+  #newPostForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #adName {
+    width: 75%;
+    margin: 1% 12.5%;
+  }
+  #adPrice {
+    width: 30%;
+    margin: 1%;
+  }
+  #adDropdownBtn {
+    width: 40%;
+    margin: 1%;
+  }
+  #newAdText {
+    width: 75%;
+    margin: 1% 12.5%;
+  }
+  .adCardTextName {
+    font-size: 1em !important;
+  }
+  .adCardTextUser {
+    font-size: 0.5em !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #navbarNavAltMarkup {
+    height: 84vh !important;
+    width: 20vw !important;
+    position: absolute;
+    top: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #newPostForm {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1%;
+  }
+  #ads {
+    height: 85vh;
+    width: 78vw;
+    position: relative;
+    left: 10vw;
+  }
+  #adName {
+    width: 30%;
+  }
+  #adPrice {
+    width: 10%;
+  }
+  #adDropdownBtn {
+    width: 30%;
+  }
+  #newAdText {
+    width: 72%;
+    margin-top: 1%;
+  }
+  #newAdBtn {
+    margin-top: 1%;
+    width: 72% !important;
+  }
+}
+
+.adCard {
+  width: 80% !important;
+  height: 20vh;
+  border: 3px solid #64c3b8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px grey;
+  order: 2;
+  margin-top: 1%;
+  background-color: #b3b3b3;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1%;
+}
+.adCard:hover {
+  background-color: #64c3b8;
+  border: 3px solid #d6d6d6;
+}
+.adCardTextName {
+  width: 70%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1%;
+}
+.adCardTextDesc {
+  width: 65%;
+  height: 65%;
+  font-size: 0.8rem;
+  background-color: #d6d6d6;
+  border-radius: 10px;
+  padding: 1%;
+  margin: 0 0 1% 1%;
+}
+.adInfo {
+  width: 30%;
+  height: 69%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.adCardTextDate {
+  font-size: 0.5em;
+  margin: 1%;
+}
+.adCardTextNameDiv {
+  width: 100%;
+  height: 30%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.adCardTextPrice {
+  font-size: large !important;
+}
+.adCardTextPrice,
+.adCardTextCat,
+.adCardTextUser {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  margin: 0;
+
+  font-size: small;
+  word-wrap: break-word;
+  padding: 0 1%;
+}
+
+.navbar-toggler {
+  z-index: 99;
+}
+@media screen and (max-width: 400px) {
+  .navbar-toggler {
+    /* margin-top: 30%; */
+    scale: 0.6;
+  }
+}
+
+.navbar {
+  width: 98vw;
+}
+
+/* help classes */
+.centeris {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.darkBG {
+  background-color: #2d2d30;
+}
+.greenBG {
+  background-color: #64c3b8 !important;
+  border-radius: 10px;
+}
+.greyBG {
+  background-color: #b3b3b3;
+}
+.hoverGrey {
+  background-color: #d6d6d6 !important;
+  border-radius: 5px;
+}
+
+.borderisred {
+  border: 3px solid red;
+}
+.borderisgreen {
+  border: 3px solid green;
+}
+.borderisyellow {
+  border: 3px solid yellow;
+}
+.borderispink {
+  border: 3px solid lightcoral;
+}
+.borderisorange {
+  border: 3px solid orange;
+}
+.borderisblue {
+  border: 3px solid blue;
+}
+.borderisgrey {
+  border: 3px solid grey;
+}
